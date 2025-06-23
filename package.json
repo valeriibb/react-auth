@@ -1,0 +1,50 @@
+{
+  "name": "react-auth",
+  "version": "1.0.11",
+  "description": "react-authform react auth form",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
+  "scripts": {
+    "build": "nwb build-react-component --copy-files",
+    "clean": "nwb clean-module && nwb clean-demo",
+    "prepublishOnly": "npm run build",
+    "start": "nwb serve-react-demo",
+    "test": "nwb test-react",
+    "test:coverage": "nwb test-react --coverage",
+    "test:watch": "nwb test-react --server"
+  },
+  "dependencies": {
+    "@john0504/react-authform": "^1.0.11",
+    "@material-ui/core": "^4.9.11",
+    "@material-ui/icons": "^4.9.1",
+    "nwb": "0.24.x",
+    "prop-types": "^15.7.2",
+    "react": ">=16.13.1",
+    "react-dom": "^16.13.0",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.1",
+    "redux": "^4.0.5"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.5.0",
+    "@testing-library/react": "^10.0.3",
+    "@testing-library/user-event": "^10.0.2"
+  },
+  "author": "",
+  "homepage": "",
+  "license": "MIT",
+  "keywords": [
+    "react-component react auth form"
+  ],
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  }
+}
